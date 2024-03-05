@@ -6,7 +6,7 @@ import { ChooseJob } from "./component/chooseJob";
 import { UpdateObject } from "./component/updateObject";
 //import { QuestArray } from "./component/updateArray";
 import { UpdateObjectArray } from "./component/updateObjectArray";
-
+import TrySearch from "./component/trySearch";
 
 function App() {
   const weapons = [
@@ -30,6 +30,8 @@ function App() {
         {/* revision useState */}
         <PowerState object="Strength" />
         <OnChange />
+
+        <TrySearch />
       </div>
 
       <div>
