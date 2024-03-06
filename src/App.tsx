@@ -7,6 +7,8 @@ import { UpdateObject } from "./component/updateObject";
 //import { QuestArray } from "./component/updateArray";
 import { UpdateObjectArray } from "./component/updateObjectArray";
 import TrySearch from "./component/trySearch";
+import { AdditionalEffect, ChangeTitle } from "./component/additionalEffect";
+import { DigitalClock } from "./component/digitalClock";
 
 function App() {
   const weapons = [
@@ -18,6 +20,11 @@ function App() {
 
   return (
     <>
+      <div>
+        <ChangeTitle />
+        <DigitalClock />
+      </div>
+
       <div style={{ display: "grid" }}>
         <UpdateObject />
 
@@ -25,7 +32,7 @@ function App() {
         <ChooseJob />
 
         {weapons.length > 0 && <List items={weapons} category="Weapon Type" />}
-
+        <AdditionalEffect />
         {/* <Button /> */}
         {/* revision useState */}
         <PowerState object="Strength" />
