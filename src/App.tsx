@@ -9,6 +9,7 @@ import { UpdateObjectArray } from "./component/updateObjectArray";
 import TrySearch from "./component/trySearch";
 import { AdditionalEffect, ChangeTitle } from "./component/additionalEffect";
 import { DigitalClock } from "./component/digitalClock";
+import { StopWatch } from "./component/stopWatch";
 
 function App() {
   const weapons = [
@@ -23,6 +24,7 @@ function App() {
       <div>
         <ChangeTitle />
         <DigitalClock />
+        <StopWatch />
       </div>
 
       <div style={{ display: "grid" }}>

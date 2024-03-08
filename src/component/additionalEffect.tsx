@@ -24,7 +24,7 @@ export function AdditionalEffect() {
 }
 
 export const ChangeTitle = () => {
-  const [title, setTitle] = useState("");
+  const [title, setTitle] = useState("Welcome back");
 
   useEffect(() => {
     document.title = title;
